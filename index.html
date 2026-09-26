@@ -9,7 +9,8 @@
     <meta name="author" content="Med Logistics Services SARL" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://medlogservices.com" />
-    <link rel="icon" type="image/x-icon" href="/favico.ico" />
+    <link rel="icon" type="image/x-icon" href="favico.ico" />
+    <meta name="theme-color" content="#07111f" />
 
     <meta property="og:title" content="Med Logistics Services SARL | Freight Forwarding Lebanon" />
     <meta property="og:description" content="Your trusted partner in global freight forwarding. Air, sea, and land logistics solutions connecting Lebanon to the world." />
@@ -50,11 +51,424 @@
       }
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-DHTb9G51.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-nyrjBaR0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" />
+    <link rel="preload" as="image" href="images/pic1.webp" type="image/webp" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="js/main.js" defer></script>
   </head>
 
-  <body>
-    <div id="root"></div>
+  <body data-page="home">
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-media" data-depth="-12">
+          <img src="images/pic1.webp" alt="" width="1584" height="672" fetchpriority="high" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+
+        <svg class="hero-routes" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="routeGrad" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#16bff1" stop-opacity="0" />
+              <stop offset=".45" stop-color="#16bff1" />
+              <stop offset="1" stop-color="#ff8a3d" />
+            </linearGradient>
+          </defs>
+          <path id="route1" class="route-base" d="M-40 760 C 320 520, 640 420, 1000 300 S 1360 170, 1500 120" />
+          <path class="route-flow" d="M-40 760 C 320 520, 640 420, 1000 300 S 1360 170, 1500 120" />
+          <path id="route2" class="route-base" d="M200 920 C 480 700, 800 640, 1080 540 S 1360 420, 1500 360" />
+          <path class="route-flow" d="M200 920 C 480 700, 800 640, 1080 540 S 1360 420, 1500 360" />
+          <path id="route3" class="route-base" d="M1000 300 C 1120 420, 1180 560, 1260 700 S 1380 860, 1460 940" />
+          <path class="route-flow" d="M1000 300 C 1120 420, 1180 560, 1260 700 S 1380 860, 1460 940" />
+          <g class="node" transform="translate(1000 300)"><circle r="5" /><circle r="5" class="ring" /></g>
+          <g class="node node--accent" transform="translate(1080 540)"><circle r="5" /><circle r="5" class="ring" /></g>
+          <g class="node" transform="translate(1260 700)"><circle r="4" /><circle r="4" class="ring" /></g>
+        </svg>
+
+        <div class="container hero-inner">
+          <div>
+            <span class="hero-badge intro" style="--d:.1s"><span class="pulse-dot"></span>Trusted Freight Forwarding from Lebanon</span>
+            <h1>
+              <span class="split-line"><span style="--d:.25s">From <span class="text-grad">Skyline</span></span></span>
+              <span class="split-line"><span style="--d:.4s">to <span class="text-grad">Shoreline</span></span></span>
+            </h1>
+            <p class="hero-rotator intro" style="--d:.7s">
+              <span>We move your cargo by</span>
+              <span class="rotator" data-rotator aria-hidden="true">
+                <span>Air Freight</span><span>Sea Freight</span><span>Land Transport</span><span>Multimodal Routes</span>
+              </span>
+              <span class="sr-only">air, sea, land and multimodal routes</span>
+            </p>
+            <p class="lead intro" style="--d:.85s">Your trusted partner in global freight forwarding. We deliver seamless logistics solutions across air, sea, and land — connecting Lebanon to the world with precision, speed, and reliability.</p>
+            <div class="hero-actions intro" style="--d:1s">
+              <a class="btn btn-primary btn-lg" href="quote.html">Get a Free Quote <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+              <a class="btn btn-ghost btn-lg" href="services.html">Our Services</a>
+            </div>
+            <div class="intro" style="--d:1.15s">
+              <p class="track-label">Track a shipment</p>
+              <form class="track-form" data-track>
+                <svg class="i" aria-hidden="true"><use href="#i-search" /></svg>
+                <label class="sr-only" for="track-no">Tracking number</label>
+                <input id="track-no" type="text" maxlength="60" placeholder="Tracking number (e.g., MLS-2026-001234)" autocomplete="off" />
+                <button class="btn btn-primary btn-sm" type="submit">Track</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="hero-cards" data-depth="26">
+            <div class="intro" style="--d:.9s">
+              <div class="glass-card">
+                <span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-globe" /></svg></span>
+                <div><strong data-count="50" data-suffix="+">50+</strong><span>Countries Served</span></div>
+              </div>
+            </div>
+            <div class="intro" style="--d:1.05s">
+              <div class="glass-card" style="--fd:-2s">
+                <span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-package" /></svg></span>
+                <div><strong data-count="10000" data-suffix="+">10,000+</strong><span>Shipments Delivered</span></div>
+              </div>
+            </div>
+            <div class="intro" style="--d:1.2s">
+              <div class="glass-card" style="--fd:-4s">
+                <span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-clock" /></svg></span>
+                <div><strong data-count="99.5" data-decimals="1" data-suffix="%">99.5%</strong><span>On-Time Delivery</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#partners" aria-label="Scroll to content"><span class="mouse"></span>Scroll</a>
+      </section>
+
+      <!-- Affiliations -->
+      <section class="partners" id="partners" aria-label="Affiliations">
+        <div class="container"><p class="partners-title">Trusted by industry leaders · Affiliated with global organizations</p></div>
+        <div class="marquee">
+          <div class="marquee-track">
+            <div class="partner"><b>IATA</b><small>International Air Transport Association</small></div>
+            <div class="partner"><b>FIATA</b><small>International Federation of Freight Forwarders Associations</small></div>
+            <div class="partner"><b>WCO</b><small>World Customs Organization</small></div>
+            <div class="partner"><b>IMO</b><small>International Maritime Organization</small></div>
+            <div class="partner"><b>ICC</b><small>International Chamber of Commerce</small></div>
+            <div class="partner"><b>BSEC</b><small>Black Sea Economic Cooperation</small></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About teaser -->
+      <section class="section">
+        <div class="container split">
+          <div class="media-stack" data-reveal="left">
+            <div class="media-main"><img src="images/pic8.webp" alt="Med Logistics Services operations" width="1376" height="768" loading="lazy" /></div>
+            <div class="media-sub" data-parallax="-0.08"><img src="images/pic6.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+            <div class="exp-badge"><strong data-count="15" data-suffix="+">15+</strong><span>Years of<br />Experience</span></div>
+            <div class="cert-badge">
+              <span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-award" /></svg></span>
+              <div><strong>Licensed &amp; Certified</strong><span>IATA &amp; FIATA Member</span></div>
+            </div>
+          </div>
+          <div data-reveal="right">
+            <span class="eyebrow">About Us</span>
+            <h2 class="h2">Your Trusted Logistics Partner in <span class="text-accent">Lebanon</span></h2>
+            <p class="lead">Decades of experience in freight forwarding, connecting businesses across the Mediterranean and beyond.</p>
+            <p>Med Logistics Services SARL is a premier freight forwarding company headquartered in Dora, Lebanon. With a deep understanding of international trade regulations and logistics complexities, we provide end-to-end supply chain solutions tailored to each client's unique needs.</p>
+            <ul class="checklist">
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Global Network Coverage</li>
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Customs Expertise</li>
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Real-Time Tracking</li>
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Competitive Pricing</li>
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Dedicated Account Managers</li>
+              <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>24/7 Customer Support</li>
+            </ul>
+            <div class="row-actions">
+              <a class="btn btn-dark" href="about.html">Discover Our Story <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+              <a class="btn btn-outline" href="services.html">Explore Our Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Our Services</span>
+            <h2>Comprehensive Logistics <span class="text-grad">Solutions</span></h2>
+            <p class="lead">From air and sea freight to customs clearance and warehousing, we offer a full spectrum of logistics services tailored to your business needs.</p>
+          </div>
+          <div class="services-grid" data-stagger=".08">
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#air" data-tilt>
+                <div class="thumb"><img src="images/pic2.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-plane" /></svg></span>
+                  <h3>Air Freight</h3>
+                  <p>Fast and reliable air cargo solutions for time-sensitive shipments, anywhere in the world.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#sea" data-tilt>
+                <div class="thumb"><img src="images/pic3.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-ship" /></svg></span>
+                  <h3>Sea Freight</h3>
+                  <p>Cost-effective FCL and LCL ocean freight across all major trade lanes.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#land" data-tilt>
+                <div class="thumb"><img src="images/pic4.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-truck" /></svg></span>
+                  <h3>Land Transport</h3>
+                  <p>Road and rail freight connecting major hubs across the Middle East and beyond.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#customs" data-tilt>
+                <div class="thumb"><img src="images/pic5.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-customs" /></svg></span>
+                  <h3>Customs Clearance</h3>
+                  <p>Licensed brokers ensuring smooth, compliant clearance of your goods.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#warehouse" data-tilt>
+                <div class="thumb"><img src="images/pic6.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-warehouse" /></svg></span>
+                  <h3>Warehousing</h3>
+                  <p>Secure, modern storage and distribution with inventory management.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#supply-chain" data-tilt>
+                <div class="thumb"><img src="images/pic7.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-network" /></svg></span>
+                  <h3>Supply Chain Management</h3>
+                  <p>End-to-end solutions that optimize every link, from procurement to delivery.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#project-cargo" data-tilt>
+                <div class="thumb"><img src="images/pic9.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-package" /></svg></span>
+                  <h3>Project Cargo</h3>
+                  <p>Specialized handling of oversized, heavy-lift and complex shipments.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+            <div data-reveal>
+              <a class="service-card spot" href="services.html#insurance" data-tilt>
+                <div class="thumb"><img src="images/pic10.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+                <div class="body">
+                  <span class="s-icon"><svg class="i" aria-hidden="true"><use href="#i-shield" /></svg></span>
+                  <h3>Cargo Insurance</h3>
+                  <p>Protection against loss, damage and unforeseen events — peace of mind for every shipment.</p>
+                  <span class="link-arrow">Learn more <svg class="i" aria-hidden="true"><use href="#i-arrow-right" /></svg></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats-band" aria-label="Company figures">
+        <div class="container stats-grid" data-stagger=".12">
+          <div class="stat" data-reveal><div class="num" data-count="15" data-suffix="+">15+</div><div class="label">Years of Experience</div></div>
+          <div class="stat" data-reveal><div class="num" data-count="10000" data-suffix="+">10,000+</div><div class="label">Shipments Delivered</div></div>
+          <div class="stat" data-reveal><div class="num" data-count="50" data-suffix="+">50+</div><div class="label">Countries Served</div></div>
+          <div class="stat" data-reveal><div class="num" data-count="500" data-suffix="+">500+</div><div class="label">Happy Clients</div></div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">How It Works</span>
+            <h2>Simple &amp; <span class="text-grad">Streamlined</span> Process</h2>
+            <p class="lead">From initial consultation to final delivery, our process is designed for efficiency and transparency.</p>
+          </div>
+          <ol class="process" data-observe>
+            <li class="process-line" aria-hidden="true"><span></span></li>
+            <li class="step" style="--i:0">
+              <div class="step-num">01<svg class="i" aria-hidden="true"><use href="#i-users" /></svg></div>
+              <h3>Consultation</h3>
+              <p>We analyze your logistics needs and design a tailored freight solution that fits your timeline and budget.</p>
+            </li>
+            <li class="step" style="--i:1">
+              <div class="step-num">02<svg class="i" aria-hidden="true"><use href="#i-route" /></svg></div>
+              <h3>Planning</h3>
+              <p>Our experts plan the optimal route, select the best carriers, and prepare all necessary documentation.</p>
+            </li>
+            <li class="step" style="--i:2">
+              <div class="step-num">03<svg class="i" aria-hidden="true"><use href="#i-truck" /></svg></div>
+              <h3>Execution</h3>
+              <p>We handle pickup, customs clearance, and transportation while you track your shipment in real-time.</p>
+            </li>
+            <li class="step" style="--i:3">
+              <div class="step-num">04<svg class="i" aria-hidden="true"><use href="#i-check-circle" /></svg></div>
+              <h3>Delivery</h3>
+              <p>Your cargo arrives safely at its destination, on time and within budget. We handle the final mile with care.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Why us -->
+      <section class="section section--dark on-dark">
+        <div class="glow-top"></div>
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Why Choose Us</span>
+            <h2>The Med Logistics <span class="text-grad">Advantage</span></h2>
+            <p class="lead">We go above and beyond to deliver exceptional logistics experiences that set us apart from the competition.</p>
+          </div>
+          <div class="features" data-stagger=".08">
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">01</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-globe" /></svg></div>
+              <h3>Global Reach</h3>
+              <p>Extensive network of partners and agents spanning 50+ countries, ensuring seamless logistics coverage worldwide.</p>
+            </div>
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">02</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-clock" /></svg></div>
+              <h3>On-Time Delivery</h3>
+              <p>Our 99.5% on-time delivery rate speaks for itself. We understand that time is money in international trade.</p>
+            </div>
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">03</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-users" /></svg></div>
+              <h3>Expert Team</h3>
+              <p>Our seasoned logistics professionals bring decades of combined experience in freight forwarding and customs brokerage.</p>
+            </div>
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">04</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-tag" /></svg></div>
+              <h3>Competitive Pricing</h3>
+              <p>Leveraging our strong carrier relationships and volume discounts to offer you the most competitive rates in the market.</p>
+            </div>
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">05</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-eye" /></svg></div>
+              <h3>Full Visibility</h3>
+              <p>Real-time tracking and proactive updates keep you informed at every stage of your shipment's journey.</p>
+            </div>
+            <div class="feature spot" data-reveal>
+              <span class="f-num" aria-hidden="true">06</span>
+              <div class="f-icon"><svg class="i" aria-hidden="true"><use href="#i-headset" /></svg></div>
+              <h3>24/7 Support</h3>
+              <p>Round-the-clock customer support ensures your questions are answered and issues resolved promptly, any time of day.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Testimonials</span>
+            <h2>What Our Clients <span class="text-accent">Say</span></h2>
+            <p class="lead">Don't just take our word for it — hear from the businesses that trust us with their logistics.</p>
+          </div>
+          <div class="t-slider" data-slider data-reveal="zoom" aria-roledescription="carousel" aria-label="Client testimonials">
+            <div class="t-viewport">
+              <div class="t-track">
+                <figure class="t-slide" aria-roledescription="slide">
+                  <div class="t-card">
+                    <span class="qmark" aria-hidden="true">&ldquo;</span>
+                    <div class="stars" aria-label="5 out of 5 stars"><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg></div>
+                    <blockquote>Med Logistics has been our trusted freight partner for over 5 years. Their attention to detail and commitment to on-time delivery has been instrumental in growing our import business across the Middle East.</blockquote>
+                    <figcaption class="t-author"><span class="avatar">AK</span><div><strong>Ahmad Khalil</strong><span>CEO, Khalil Trading Co.</span></div></figcaption>
+                  </div>
+                </figure>
+                <figure class="t-slide" aria-roledescription="slide">
+                  <div class="t-card">
+                    <span class="qmark" aria-hidden="true">&ldquo;</span>
+                    <div class="stars" aria-label="5 out of 5 stars"><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg></div>
+                    <blockquote>The customs clearance team at Med Logistics is exceptional. They navigate complex regulations with ease and have saved us countless hours and resources. Highly recommended for any business in Lebanon.</blockquote>
+                    <figcaption class="t-author"><span class="avatar">MH</span><div><strong>Marie Haddad</strong><span>Supply Chain Director, Haddad Industries</span></div></figcaption>
+                  </div>
+                </figure>
+                <figure class="t-slide" aria-roledescription="slide">
+                  <div class="t-card">
+                    <span class="qmark" aria-hidden="true">&ldquo;</span>
+                    <div class="stars" aria-label="5 out of 5 stars"><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg></div>
+                    <blockquote>From sea freight to warehousing, Med Logistics handles our entire supply chain seamlessly. Their competitive pricing and professional service make them the best logistics partner in the region.</blockquote>
+                    <figcaption class="t-author"><span class="avatar">FN</span><div><strong>Fadi Nassar</strong><span>Operations Manager, Nassar Exports</span></div></figcaption>
+                  </div>
+                </figure>
+                <figure class="t-slide" aria-roledescription="slide">
+                  <div class="t-card">
+                    <span class="qmark" aria-hidden="true">&ldquo;</span>
+                    <div class="stars" aria-label="5 out of 5 stars"><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg></div>
+                    <blockquote>We switched to Med Logistics two years ago and haven't looked back. Their real-time tracking and proactive communication give us complete visibility over our shipments at all times.</blockquote>
+                    <figcaption class="t-author"><span class="avatar">RS</span><div><strong>Rania Sarkis</strong><span>Procurement Head, Sarkis Group</span></div></figcaption>
+                  </div>
+                </figure>
+                <figure class="t-slide" aria-roledescription="slide">
+                  <div class="t-card">
+                    <span class="qmark" aria-hidden="true">&ldquo;</span>
+                    <div class="stars" aria-label="5 out of 5 stars"><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg><svg class="i"><use href="#i-star" /></svg></div>
+                    <blockquote>The project cargo team handled our oversized industrial equipment shipment flawlessly. Their engineering support and route planning expertise are truly world-class.</blockquote>
+                    <figcaption class="t-author"><span class="avatar">GM</span><div><strong>Georges Mouawad</strong><span>Managing Director, Mouawad Imports</span></div></figcaption>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="t-controls">
+              <button class="t-btn" type="button" data-prev aria-label="Previous testimonial"><svg class="i" aria-hidden="true"><use href="#i-chevron-left" /></svg></button>
+              <div class="t-dots"></div>
+              <button class="t-btn" type="button" data-next aria-label="Next testimonial"><svg class="i" aria-hidden="true"><use href="#i-chevron-right" /></svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="cta" data-reveal="zoom">
+            <div class="cta-bg" data-parallax="0.12"><img src="images/pic3.webp" alt="" width="1264" height="848" loading="lazy" /></div>
+            <div class="cta-inner">
+              <div>
+                <h2>Ready to Streamline Your Logistics?</h2>
+                <p>Let our experts design a customized freight solution that saves you time and money.</p>
+              </div>
+              <div class="cta-actions">
+                <a class="btn btn-primary btn-lg" href="quote.html">Request a Quote <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow-right" /></svg></a>
+                <a class="btn btn-ghost btn-lg" href="tel:+9611255823"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg>Call Us Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

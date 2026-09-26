@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quote | Med Logistics Services SARL</title>
+    <meta name="description" content="Request a customized freight forwarding quote for air, sea, land or multimodal shipments. Our logistics team replies within 24 hours." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://medlogservices.com/quote.html" />
+    <link rel="icon" type="image/x-icon" href="favico.ico" />
+    <meta name="theme-color" content="#07111f" />
+    <meta property="og:title" content="Request a Freight Quote | Med Logistics Services" />
+    <meta property="og:description" content="Get a customized freight forwarding quote within 24 hours." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://medlogservices.com/quote.html" />
+    <meta property="og:image" content="/images/pic4.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="js/main.js" defer></script>
+    <script src="js/quote.js" defer></script>
+  </head>
+
+  <body data-page="quote">
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero-media" data-parallax="0.2"><img src="images/pic4.webp" alt="" width="1264" height="848" fetchpriority="high" /></div>
+        <div class="hero-grid"></div>
+        <div class="container">
+          <ol class="crumbs intro" style="--d:.1s"><li><a href="index.html">Home</a></li><li aria-current="page">Request a Quote</li></ol>
+          <h1>
+            <span class="split-line"><span style="--d:.2s">Get a Customized</span></span>
+            <span class="split-line"><span style="--d:.35s"><span class="text-grad">Freight Quote</span></span></span>
+          </h1>
+          <p class="intro" style="--d:.6s">Tell us about your shipment in four quick steps. Our logistics team will review the details and send a tailored quotation within 24 hours.</p>
+        </div>
+      </section>
+
+      <section class="section section--alt" style="padding-top:64px">
+        <div class="container layout-aside">
+          <div class="form-card" data-reveal>
+            <form id="quote-form" novalidate>
+              <ol class="stepper" aria-label="Quote progress">
+                <li class="stepper-fill" aria-hidden="true"></li>
+                <li data-step-indicator="1"><span class="dot"><svg class="i" aria-hidden="true"><use href="#i-package" /></svg></span><span class="label">Cargo Details</span></li>
+                <li data-step-indicator="2"><span class="dot"><svg class="i" aria-hidden="true"><use href="#i-route" /></svg></span><span class="label">Route</span></li>
+                <li data-step-indicator="3"><span class="dot"><svg class="i" aria-hidden="true"><use href="#i-calendar" /></svg></span><span class="label">Schedule</span></li>
+                <li data-step-indicator="4"><span class="dot"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span><span class="label">Review</span></li>
+              </ol>
+
+              <!-- Step 1 -->
+              <fieldset class="q-panel active" data-step="1">
+                <legend class="sr-only">Cargo details</legend>
+                <h2>Cargo Details</h2>
+                <p>Tell us about your shipment and its specifications.</p>
+
+                <h3 class="form-sub">Contact Information</h3>
+                <div class="form-grid">
+                  <div class="field"><label for="contact_name">Full Name *</label><input class="input" id="contact_name" name="contact_name" type="text" autocomplete="name" placeholder="John Doe" maxlength="120" /><span class="err" id="err-contact_name"></span></div>
+                  <div class="field"><label for="contact_email">Email Address *</label><input class="input" id="contact_email" name="contact_email" type="email" autocomplete="email" placeholder="john@company.com" maxlength="160" /><span class="err" id="err-contact_email"></span></div>
+                  <div class="field"><label for="contact_phone">Phone Number</label><input class="input" id="contact_phone" name="contact_phone" type="tel" autocomplete="tel" placeholder="+961 XX XXX XXX" maxlength="40" /></div>
+                  <div class="field"><label for="company_name">Company Name</label><input class="input" id="company_name" name="company_name" type="text" autocomplete="organization" placeholder="Your Company Ltd." maxlength="160" /></div>
+                </div>
+
+                <h3 class="form-sub">Cargo</h3>
+                <div class="form-grid">
+                  <div class="field full"><label for="cargo_type">Cargo Type *</label><select class="input" id="cargo_type" name="cargo_type"><option value="">Select cargo type</option></select><span class="err" id="err-cargo_type"></span></div>
+                  <div class="field full"><label for="cargo_description">Cargo Description</label><textarea class="input" id="cargo_description" name="cargo_description" rows="3" maxlength="2000" placeholder="Provide additional details about your cargo..."></textarea></div>
+                </div>
+
+                <h3 class="form-sub">Dimensions &amp; Weight</h3>
+                <div class="form-grid form-grid--3">
+                  <div class="field"><label for="quantity">Quantity *</label><input class="input" id="quantity" name="quantity" type="number" min="1" step="1" value="1" inputmode="numeric" /><span class="err" id="err-quantity"></span></div>
+                  <div class="field"><label for="weight_kg">Weight (kg) *</label><input class="input" id="weight_kg" name="weight_kg" type="number" min="0" step="0.1" placeholder="0.0" inputmode="decimal" /><span class="err" id="err-weight_kg"></span></div>
+                  <div class="field"><label for="length_cm">Length (cm)</label><input class="input" id="length_cm" name="length_cm" type="number" min="0" step="0.1" inputmode="decimal" /></div>
+                  <div class="field"><label for="width_cm">Width (cm)</label><input class="input" id="width_cm" name="width_cm" type="number" min="0" step="0.1" inputmode="decimal" /></div>
+                  <div class="field"><label for="height_cm">Height (cm)</label><input class="input" id="height_cm" name="height_cm" type="number" min="0" step="0.1" inputmode="decimal" /></div>
+                </div>
+
+                <h3 class="form-sub">Special Handling Requirements</h3>
+                <div class="chips">
+                  <label class="chip"><input type="checkbox" name="is_hazardous" /><span>Hazardous</span></label>
+                  <label class="chip"><input type="checkbox" name="is_fragile" /><span>Fragile</span></label>
+                  <label class="chip"><input type="checkbox" name="is_perishable" /><span>Perishable</span></label>
+                  <label class="chip"><input type="checkbox" name="is_oversized" /><span>Oversized</span></label>
+                </div>
+              </fieldset>
+
+              <!-- Step 2 -->
+              <fieldset class="q-panel" data-step="2">
+                <legend class="sr-only">Shipping route</legend>
+                <h2>Shipping Route</h2>
+                <p>Specify the origin and destination for your shipment.</p>
+
+                <h3 class="form-sub">Origin (Pickup)</h3>
+                <div class="form-grid">
+                  <div class="field"><label for="origin_country">Country *</label><select class="input" id="origin_country" name="origin_country" data-countries><option value="">Select country</option></select><span class="err" id="err-origin_country"></span></div>
+                  <div class="field"><label for="origin_city">City *</label><input class="input" id="origin_city" name="origin_city" type="text" placeholder="e.g., Shanghai" maxlength="120" /><span class="err" id="err-origin_city"></span></div>
+                  <div class="field"><label for="origin_address">Address</label><input class="input" id="origin_address" name="origin_address" type="text" placeholder="Full pickup address" maxlength="300" /></div>
+                  <div class="field"><label for="origin_port">Port / Airport</label><input class="input" id="origin_port" name="origin_port" type="text" placeholder="e.g., Shanghai Port" maxlength="120" /></div>
+                </div>
+
+                <h3 class="form-sub">Destination (Delivery)</h3>
+                <div class="form-grid">
+                  <div class="field"><label for="destination_country">Country *</label><select class="input" id="destination_country" name="destination_country" data-countries><option value="">Select country</option></select><span class="err" id="err-destination_country"></span></div>
+                  <div class="field"><label for="destination_city">City *</label><input class="input" id="destination_city" name="destination_city" type="text" placeholder="e.g., Beirut" maxlength="120" /><span class="err" id="err-destination_city"></span></div>
+                  <div class="field"><label for="destination_address">Address</label><input class="input" id="destination_address" name="destination_address" type="text" placeholder="Full delivery address" maxlength="300" /></div>
+                  <div class="field"><label for="destination_port">Port / Airport</label><input class="input" id="destination_port" name="destination_port" type="text" placeholder="e.g., Beirut Port" maxlength="120" /></div>
+                </div>
+              </fieldset>
+
+              <!-- Step 3 -->
+              <fieldset class="q-panel" data-step="3">
+                <legend class="sr-only">Schedule and preferences</legend>
+                <h2>Schedule &amp; Preferences</h2>
+                <p>Choose your transport mode, delivery timeline, and additional services.</p>
+
+                <h3 class="form-sub" id="mode-label">Transport Mode *</h3>
+                <div class="choice-grid" role="radiogroup" aria-labelledby="mode-label" id="transport_mode_group">
+                  <label class="choice"><input type="radio" name="transport_mode" value="air" /><span class="choice-body"><span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-plane" /></svg></span><span><strong>Air Freight</strong><small>Fastest option for time-sensitive cargo</small></span></span></label>
+                  <label class="choice"><input type="radio" name="transport_mode" value="sea" /><span class="choice-body"><span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-ship" /></svg></span><span><strong>Sea Freight</strong><small>Cost-effective for large shipments</small></span></span></label>
+                  <label class="choice"><input type="radio" name="transport_mode" value="land" /><span class="choice-body"><span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-truck" /></svg></span><span><strong>Land Transport</strong><small>Regional road &amp; rail solutions</small></span></span></label>
+                  <label class="choice"><input type="radio" name="transport_mode" value="multimodal" /><span class="choice-body"><span class="glass-icon"><svg class="i" aria-hidden="true"><use href="#i-layers" /></svg></span><span><strong>Multimodal</strong><small>Combined transport for optimal routing</small></span></span></label>
+                </div>
+                <span class="err" id="err-transport_mode" style="display:block;margin-top:8px"></span>
+
+                <div class="form-grid" style="margin-top:24px">
+                  <div class="field"><label for="incoterm">Incoterm</label><select class="input" id="incoterm" name="incoterm"><option value="">Select incoterm</option></select></div>
+                  <div class="field"><label for="delivery_date">Required Delivery Date</label><input class="input" id="delivery_date" name="delivery_date" type="date" /></div>
+                </div>
+                <label class="check-inline"><input type="checkbox" name="is_flexible_date" />My delivery date is flexible (may help reduce costs)</label>
+
+                <h3 class="form-sub">Additional Services</h3>
+                <label class="check-row"><input type="checkbox" name="insurance_needed" id="insurance_needed" /><span><strong>Cargo Insurance</strong><small>Protect your shipment against loss or damage</small></span></label>
+                <div class="field sub-field" id="insurance-value-field" hidden><label for="insurance_value">Declared Value (USD)</label><input class="input" id="insurance_value" name="insurance_value" type="number" min="0" step="0.01" placeholder="e.g., 50000" inputmode="decimal" /></div>
+                <label class="check-row"><input type="checkbox" name="customs_clearance_needed" /><span><strong>Customs Clearance</strong><small>We handle all import/export documentation and duties</small></span></label>
+                <label class="check-row"><input type="checkbox" name="warehousing_needed" /><span><strong>Warehousing &amp; Storage</strong><small>Temporary storage at origin or destination</small></span></label>
+
+                <div class="field full" style="margin-top:24px"><label for="special_instructions">Special Instructions</label><textarea class="input" id="special_instructions" name="special_instructions" rows="3" maxlength="2000" placeholder="Any additional requirements, special handling notes, or questions..."></textarea></div>
+              </fieldset>
+
+              <!-- Step 4 -->
+              <div class="q-panel" data-step="4">
+                <h2>Review Your Quote Request</h2>
+                <p>Please review all details before submitting. Use <strong>Edit</strong> to change any section.</p>
+                <div id="review"></div>
+                <div class="alert alert-info"><svg class="i" aria-hidden="true"><use href="#i-alert-circle" /></svg><span>Our team will review your request and send a detailed quotation to <strong id="review-email"></strong> within 24 hours.</span></div>
+                <div class="alert alert-error" id="submit-error" role="alert" hidden><svg class="i" aria-hidden="true"><use href="#i-alert-circle" /></svg><span></span></div>
+              </div>
+
+              <div class="q-nav">
+                <button class="btn btn-outline" type="button" id="q-back" hidden>Back</button>
+                <span class="step-count" id="q-count" aria-live="polite">Step 1 of 4</span>
+                <button class="btn btn-primary" type="button" id="q-next">Continue <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow-right" /></svg></button>
+                <button class="btn btn-primary" type="submit" id="q-submit" hidden>Submit Quote Request <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow-right" /></svg></button>
+              </div>
+            </form>
+
+            <div class="success-view" id="quote-success" hidden tabindex="-1">
+              <svg class="success-check" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" /><path d="M30 52 44 66 72 36" /></svg>
+              <h2>Quote Request Submitted!</h2>
+              <p>Thank you, <strong id="success-name"></strong>. Your quote request has been received successfully. Our logistics team will review your shipment details and send a detailed quotation to <strong id="success-email"></strong> within 24 hours.</p>
+              <div class="form-actions" style="justify-content:center">
+                <a class="btn btn-primary" href="index.html">Back to Home</a>
+                <a class="btn btn-outline" href="quote.html">Submit Another Request</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="aside-stack">
+            <div class="aside-card" data-reveal="right">
+              <h3>Why request a quote with us?</h3>
+              <ul>
+                <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Tailored pricing for your route and cargo</li>
+                <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Response within 24 hours</li>
+                <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Air, sea, land &amp; multimodal options</li>
+                <li><span class="tick"><svg class="i" aria-hidden="true"><use href="#i-check" /></svg></span>Customs, insurance &amp; storage in one place</li>
+              </ul>
+            </div>
+            <div class="aside-card aside-card--light" data-reveal="right" style="--d:.1s">
+              <h3>Prefer to talk?</h3>
+              <p>Our team is ready to help you find the perfect logistics solution.</p>
+              <ul style="margin:0">
+                <li class="contact-line"><svg class="i" aria-hidden="true"><use href="#i-phone" /></svg><a href="tel:+9611255823">01 255 823</a></li>
+                <li class="contact-line"><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg><a href="mailto:info@medlogservices.com">info@medlogservices.com</a></li>
+                <li class="contact-line"><svg class="i" aria-hidden="true"><use href="#i-clock" /></svg><span>Mon – Fri: 8:00 AM – 6:00 PM<br />Sat: 9:00 AM – 1:00 PM</span></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
